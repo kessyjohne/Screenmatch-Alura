@@ -13,7 +13,7 @@ public class Musica {
         System.out.println("Ano de lançamento: " + anoLancamento);
     }
 
-    void avaliar(double nota) {           // criou um parametro double onde quando for chamado no teste o usuario vai digitar a avaliação no paramatro que ira automaticamente somar tanto na quantia de avaliações que teve quanto na somade avaliaçoes
+    void avaliar(double nota) {
         SomaDasAvaliacoes += nota;
         totalDeAvaliacoes++;
     }

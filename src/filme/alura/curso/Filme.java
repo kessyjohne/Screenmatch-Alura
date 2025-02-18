@@ -1,14 +1,14 @@
 package filme.alura.curso;
 
 public class Filme {
-    private String nome;                           //Adicionando elementos na classe que possam ser alteradas.
+    private String nome;
     private int anoLancamento;
     private boolean incluidoPlano;
     private double somaAvaliacoes;
     private int totalAvaliacoes;
     private int duracaoEmMinutos;
 
-    public void setNome(String nome) {       //é um setter que vai permitir o usuario alterar o nome do filme
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
@@ -40,21 +40,21 @@ public class Filme {
         return duracaoEmMinutos;
     }
 
-    int getTotalAvaliacoes(){         // declarei um metodo que PEGA(GET) o valor de totalavalicoes (para que nao seja possivel alterar o total de avaliaçoes em situaçoes reais)
+    int getTotalAvaliacoes(){
         return totalAvaliacoes;
     }
 
-    void exibeFichaTecnica() {              // -> isso que eu criei é um metodo que exibirá a ficha tecnica do filme ao ser chamada.
+    void exibeFichaTecnica() {
         System.out.println("Nome do filme: " + nome);
         System.out.println("Ano de lançamento: " + anoLancamento);
     }
 
-    void avalia(double nota) {           // esse metodo apenas adiciona as variaveis somaAvalições a quantidade em valor que teve, e a totalavaliações a quantidade que teve.
+    void avalia(double nota) {
         somaAvaliacoes += nota;
         totalAvaliacoes++;
     }
 
-    double pegarMedia() {  // esse metodo double vai retorna a media das avaliações.
+    double pegarMedia() {
         return  somaAvaliacoes / totalAvaliacoes;
     }
 }
