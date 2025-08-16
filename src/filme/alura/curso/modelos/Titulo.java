@@ -1,9 +1,14 @@
 package filme.alura.curso.modelos;
 
-public abstract class Titulo implements Comparable<Titulo>{
+import com.google.gson.annotations.SerializedName;
+
+public class Titulo implements Comparable<Titulo>{
 
     // Caracteristicas basicas de um Titulo (Filme ou Serie)
+
+    @SerializedName("Title")
     private String nome;
+    @SerializedName("Year")
     private int anoDeLancamento;
     private int duracaoEmMinutos;
     private boolean incluidoNoPlano;
@@ -13,6 +18,13 @@ public abstract class Titulo implements Comparable<Titulo>{
     public Titulo(int anoDeLancamento, String nome) {
         this.anoDeLancamento = anoDeLancamento;
         this.nome = nome;
+    }
+
+    //construtor para definir(configurar) os atributos do json comprado com as variaveis locais.
+    public Titulo(TituloOMDb meuTituloOMDb) {
+        this.nome = meuTituloOMDb.title();
+        this.anoDeLancamento = Integer.valueOf(meuTituloOMDb.year());
+        this.duracaoEmMinutos = Integer.valueOf(meuTituloOMDb.runtime().substring(0,3));
     }
 
     // Metodo para exibir a ficha tecnica do Titulo
@@ -75,5 +87,10 @@ public abstract class Titulo implements Comparable<Titulo>{
     @Override
     public int compareTo(Titulo outroTitulo) {
         return this.getNome().compareTo(outroTitulo.getNome());
+    }
+
+    @Override
+    public String toString() {
+        return "Nome: " + nome + ", " + "Ano de lançamento: " + anoDeLancamento + ", " + "Duração em minutos: " + duracaoEmMinutos;
     }
 }

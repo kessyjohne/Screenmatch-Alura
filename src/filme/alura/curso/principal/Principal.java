@@ -84,9 +84,5 @@ public class Principal {
         System.out.println("Primeiro filme: " + listaDeFilmes.get(0).getNome());
         System.out.println("\n" + listaDeFilmes);
         System.out.println("to string " + listaDeFilmes.get(0).toString());
-
-        // o toString é um método que TODAS, TODAS as classes possuem, logo é possivel OVERRIDER nela para mudar a sua função, como por exemplo retorna o nome do filme. (this.getNome())
-
-
     }
 }
