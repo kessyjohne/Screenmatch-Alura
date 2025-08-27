@@ -20,7 +20,7 @@ public class Titulo implements Comparable<Titulo>{
         this.nome = nome;
     }
 
-    //construtor para definir(configurar) os atributos do json comprado com as variaveis locais.
+    //construtor para definir as caracteristicas do filme da api na criação do objeto.
     public Titulo(TituloOMDb meuTituloOMDb) {
         this.nome = meuTituloOMDb.title();
         this.anoDeLancamento = Integer.valueOf(meuTituloOMDb.year());
@@ -35,7 +35,6 @@ public class Titulo implements Comparable<Titulo>{
         System.out.println("Incluido no plano: " +incluidoNoPlano);
     }
 
-    // Metodo onde é feito a soma do total de avaliaçoes feitas em um titulo
     public void avalia(double nota) {
         somaDasAvaliacoes += nota;
         totalDeAvaliacoes++;

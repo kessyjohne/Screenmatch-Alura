@@ -1,6 +1,6 @@
 package filme.alura.curso.modelos;
 
-import filme.alura.curso.Definições.Classificacao;
+import filme.alura.curso.definicoes.Classificacao;
 
 public class Serie extends Titulo implements Classificacao {
 

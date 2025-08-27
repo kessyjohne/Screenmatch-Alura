@@ -1,12 +1,12 @@
 package filme.alura.curso.modelos;
 
-import filme.alura.curso.Definições.Classificacao;
+import filme.alura.curso.definicoes.Classificacao;
 
 public class Filme extends Titulo implements Classificacao {
 
     private String diretor;
 
-    public Filme(String nome, int anoDeLancamento) {  // MÉTODO CONSTRUTOR QUE JA ADICIONA O NOME DO FILME NO PARAMETRO NA CRIAÇÃO DO OBJETO.
+    public Filme(String nome, int anoDeLancamento) {
         super(anoDeLancamento, nome);
     }
 

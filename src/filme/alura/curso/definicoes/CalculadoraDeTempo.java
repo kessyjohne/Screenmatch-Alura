@@ -1,4 +1,4 @@
-package filme.alura.curso.Definições;
+package filme.alura.curso.definicoes;
 import filme.alura.curso.modelos.Titulo;
 
 public class CalculadoraDeTempo {

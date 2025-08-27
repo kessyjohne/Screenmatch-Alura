@@ -1,4 +1,4 @@
-package filme.alura.curso.Definições;
+package filme.alura.curso.definicoes;
 
 public class FiltroRecomendacao {
 

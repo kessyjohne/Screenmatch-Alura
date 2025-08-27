@@ -1,7 +1,7 @@
 package filme.alura.curso.principal;
 
-import filme.alura.curso.Definições.CalculadoraDeTempo;
-import filme.alura.curso.Definições.FiltroRecomendacao;
+import filme.alura.curso.definicoes.CalculadoraDeTempo;
+import filme.alura.curso.definicoes.FiltroRecomendacao;
 import filme.alura.curso.modelos.Episodio;
 import filme.alura.curso.modelos.Filme;
 import filme.alura.curso.modelos.Serie;
